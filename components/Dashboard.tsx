@@ -28,20 +28,14 @@ const Dashboard = () => {
       ) : (
         <>
           <h1 className="text-3xl text-red-500 font-bold">
-            You're not logged in
+            You are not logged in
           </h1>
           <div className="flex space-x-5">
             <button
-              onClick={() => signIn("google")}
+              onClick={() => signIn("azure-ad")}
               className="border border-black rounded-lg px-5 py-1"
             >
-              Sign in with Google
-            </button>
-            <button
-              onClick={() => signIn("github")}
-              className="border border-black rounded-lg bg-green-500 px-5 py-1"
-            >
-              Sign in with GitHub
+              Sign in with Azure
             </button>
           </div>
         </>
